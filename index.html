@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet/reset.css">
     <link rel="stylesheet" href="./stylesheet/main.css" />
     <link rel="shortcut icon" href="./images/favicon.png" />
     <title>Ev. Intermedia Patricia Vaquero</title>
@@ -14,15 +15,16 @@
     </header>
     <main class="main">
       <form class="form" action="">
-        <label for="inputNumber">Introduce aquí tu número:</label>
+        <label for="inputNumber" class="label">Introduce aquí tu número:</label>
         <input
           type="number"
           id="inputNumber"
           placeholder="Escribe un número entre 1-100"
+          class="input"
         />
         <input type="button" value="Prueba" class="js-button button"/>
-        <p>Pista: Escribe el número y dale a Prueba</p>
-        <input type="text" value="Número de intentos: 0" />
+        <p class="paragraph">Pista: Escribe el número y dale a Prueba</p>
+        <input type="text" value="Número de intentos: 0" class="input"/>
       </form>
     </main>
     <script src="./js/main.js"></script>
