@@ -29,14 +29,19 @@ function checkNum(){
     }else{
         text.innerHTML = "El número debe estar entre 1 y 100"; 
     }
-
+    increaseCounter();
+}
+function increaseCounter(){
+    
+    cont+=1;
+    counter.value = `Número de intentos: ${cont}`;
+    
 }
 
 function handleClickButton(){
     //comprobar numero
     checkNum();
-    //aumentar contador
-    counter();
+    //una vez se comprueba el primer número aumentar contador
 }
 
 console.log('Random number: ' + randomNumber);
