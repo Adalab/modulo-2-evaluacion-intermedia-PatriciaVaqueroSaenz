@@ -33,6 +33,7 @@
     display: block;
     width: 100%;
     
+    
 }
 .button{
     display: block;
@@ -51,4 +52,5 @@
     padding: 2px;
     margin: 20px 0 5px;
     border-radius: 5px;
+    min-width: 219px;
 }
