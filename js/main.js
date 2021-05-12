@@ -13,7 +13,7 @@ function getRandomNumber(max) {
 
 function checkNum() {
   const num = parseInt(inputNumber.value);
-  console.log(num);
+  console.log("Input number: " + num);
     
   if (num < 1 || num > 100) {
     text.innerHTML = "El número debe estar entre 1 y 100";
