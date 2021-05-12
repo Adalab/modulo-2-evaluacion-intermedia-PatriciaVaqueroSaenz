@@ -13,7 +13,8 @@ function getRandomNumber(max) {
 
 function checkNum() {
   const num = parseInt(inputNumber.value);
-
+  console.log(num);
+    
   if (num < 1 || num > 100) {
     text.innerHTML = "El número debe estar entre 1 y 100";
   } else if (num < randomNumber) {
@@ -21,12 +22,10 @@ function checkNum() {
   } else if (num > randomNumber) {
     text.innerHTML = "Pista: Demasiado alto";
   } else if (num === randomNumber) {
-    text.innerHTML = "Has ganado, campeona!!!";
-  } else {
-    text.innerHTML = "El número debe estar entre 1 y 100";
+    text.innerHTML = "Has ganado campeona!!!";
   }
-  increaseCounter();
 }
+
 function increaseCounter() {
   cont += 1;
   counter.value = `Número de intentos: ${cont}`;
@@ -35,9 +34,9 @@ function increaseCounter() {
 function handleClickButton() {
   //comprobar numero
   checkNum();
-  //una vez se comprueba el primer número aumentar contador
+  //con cada click aumenta el contador
+  increaseCounter();
 }
 
 console.log("Random number: " + randomNumber);
-
 button.addEventListener("click", handleClickButton);
