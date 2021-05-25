@@ -23,6 +23,8 @@ function checkNum() {
     text.innerHTML = "Pista: Demasiado alto";
   } else if (num === randomNumber) {
     text.innerHTML = "Has ganado campeona!!!";
+  }else {
+    text.innerHTML = "El número debe estar entre 1 y 100";
   }
 }
 
